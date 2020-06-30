@@ -3,18 +3,17 @@ const taskList = document.querySelector('#taskList');
 const clrbtn = document.querySelector('#clear')
 const taskInput = document.querySelector('#taskInput');
 
-const task = document.querySelector('#filter');
-
 // Add task
 addTask.addEventListener('submit',addNewTask);
 
-// Remove Task
+// Remove a Task
 taskList.addEventListener('click',removeTask);
 
-// Clear All
+// Clearing all tasks at once
 clrbtn.addEventListener('click',clearAll);
 
 function addNewTask(e){
+
     if(taskInput.value ===''){
         alert('Add Task')
     }else{
@@ -35,16 +34,20 @@ function addNewTask(e){
 
         taskInput.value = '';        
     }
-
     e.preventDefault();
+
 }
 
 function removeTask(e){
+
     if(e.target.parentElement.classList.contains('delete-task')){
         e.target.parentElement.parentElement.remove();
     }
+
 }
 
 function clearAll(){
+
     taskList.innerHTML ='';
+
 }
