@@ -11,23 +11,22 @@ body{
 
 .btn{
     border: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
 }
 
 .form-input{
     width: 100%;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: #ddd 1px solid;
-
+    border-radius: 0.4rem;
+    padding: 1rem;
+    border: #ddd 0.1rem solid;
 }
 
 .container{ 
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 40rem;
+    margin: 2rem auto;
 }
 
 #content{
@@ -39,7 +38,7 @@ body{
 }
 
 h1{
-    padding: 20px;
+    padding: 1.2rem;
     color: #fff;
     font-size: 4rem;
     margin-bottom: 3rem;
@@ -51,6 +50,7 @@ h1 span{
 
 #taskForm{
     width: 100%;
+    margin-left: 1rem;
     display: flex;
     margin-bottom: 3rem;
 }
@@ -58,7 +58,7 @@ h1 span{
 #taskForm .btn{
     color: #fff;
     background: #ffcc00;
-    margin: 0 10px;
+    margin: 0 0.8rem;
 }
 
 #taskForm .btn:hover{
@@ -67,22 +67,24 @@ h1 span{
 
 h3{
     color: #fff;
-    padding: 40px;
+    font-size: 1.6rem;
+    padding: 2rem;
 }
 
 #tasksDisplay{
-    padding: 30px;
+    margin: 0 2rem;
+    padding: 1.8rem;
     width: 100%;
-    border-radius: 30px;
-    border: 5px solid #fff;
+    border-radius: 2rem;
+    border: 0.2rem solid #fff;
 }
 
 #tasksDisplay .btn{
     background: #333;
     color: #fff;
     width: 100%;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 1.4rem;
+    margin-top: 2rem;
 }
 
 #tasksDisplay .btn:hover{
@@ -98,14 +100,14 @@ h3{
 .group{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 0.6rem;
 }
 
 .task-content{
     color: #fff;
-    border-bottom: 1px solid #333;
-    padding: 10px;
-    margin: 10px;
+    border-bottom: 0.1rem solid #333;
+    padding: 0.6rem;
+    margin: 0.6rem;
     width: 100%;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -115,9 +117,9 @@ h3{
     color: #fff;
     background: #333;
     border: none;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 100px;
+    font-size: 1.4rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 8rem;
     cursor: pointer;
 }
 

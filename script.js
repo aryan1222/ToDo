@@ -2,6 +2,9 @@ const addTask = document.querySelector('#taskForm');
 const taskList = document.querySelector('#taskList');
 const clrbtn = document.querySelector('#clear')
 const taskInput = document.querySelector('#taskInput');
+const search = document.getElementById('search-bar');
+
+styleSearch(search);
 
 // Add task
 addTask.addEventListener('submit',addNewTask);
@@ -11,6 +14,8 @@ taskList.addEventListener('click',removeTask);
 
 // Clearing all tasks at once
 clrbtn.addEventListener('click',clearAll);
+
+search.addEventListener('keyup',searchTask);
 
 function addNewTask(e){
 
@@ -52,4 +57,30 @@ function clearAll(){
 
     taskList.innerHTML ='';
 
+}
+
+function searchTask(e){
+
+    const searchText = e.target.value.toUpperCase();
+
+    document.querySelectorAll('.group').forEach(function(task){
+        const text = task.firstChild.textContent;
+        console.log(text);
+        if(text.toUpperCase().indexOf(searchText) != -1){
+            task.style.display = 'flex';
+        }else{
+            task.style.display = 'none';
+        }
+    });
+
+}
+
+function styleSearch(s){
+
+    s.style.background = '#777';
+    s.style.color = '#fff';
+    s.style.border = 'none';
+    s.style.borderBottom = '0.2rem solid #fff';
+    s.style.marginBottom = '2rem';
+    
 }
