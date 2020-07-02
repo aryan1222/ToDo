@@ -15,6 +15,7 @@ taskList.addEventListener('click',removeTask);
 // Clearing all tasks at once
 clrbtn.addEventListener('click',clearAll);
 
+// Searching
 search.addEventListener('keyup',searchTask);
 
 function addNewTask(e){
@@ -82,5 +83,5 @@ function styleSearch(s){
     s.style.border = 'none';
     s.style.borderBottom = '0.2rem solid #fff';
     s.style.marginBottom = '2rem';
-    
+
 }
